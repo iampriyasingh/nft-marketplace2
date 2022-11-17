@@ -54,12 +54,12 @@ import founder1 from "./founder1.jpg";
 import founder2 from "./founder2.jpg";
 import founder3 from "./founder3.jpg";
 import founder4 from "./founder4.jpg";
-import loadergif from "./loadergif.gif";
+import loader from "./loadergif.gif";
 import error from "./error.gif";
 
 export default {
   error,
-  loadergif,
+  loader,
   hero2,
   founder1,
   founder2,

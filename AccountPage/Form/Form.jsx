@@ -20,7 +20,7 @@ const Form = () => {
             <label htmlFor="name">Username</label>
             <input
               type="text"
-              placeholder="shoaib bhai"
+              placeholder="Diya Singh"
               className={Style.Form_box_input_userName}
             />
           </div>

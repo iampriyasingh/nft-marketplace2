@@ -12,7 +12,7 @@ import {TiSocialFacebook,
 //INTERNAL IMPORT
 import Style from './Footer.module.css';
 import images from "../../img";
-import {Discover, HelpCenter} from "../NavBar/index";
+import {MenuComponent} from "../NavBar/index";
 
 const Footer = () => {
   return (
@@ -43,11 +43,11 @@ const Footer = () => {
         </div>
         <div className={Style.footer_box_discover}>
           <h3>Discover</h3>
-          <Discover />
+          <MenuComponent />
         </div>
         <div className={Style.footer_box_help}>
           <h3>HelpCenter</h3>
-          <HelpCenter />
+          {/* <HelpCenter /> */}
         </div>
         <div className={Style.subscribe}>
           <h3>Subscribe</h3>

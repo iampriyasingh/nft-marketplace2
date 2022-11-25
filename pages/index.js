@@ -36,7 +36,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchNFTs().then((items) => {
-      setNfts(items.reverse());
+      setNfts(items ?.reverse());
       setNftsCopy(items);
     });
   }, []);
@@ -55,7 +55,7 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <AudioLive />
-      {creators.length == 0 ? (
+      {creators ?.length == 0 ? (
         <Loader />
       ) : (
         <FollowerTab TopCreator={creators} />
@@ -68,7 +68,7 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <Filter />
-      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
+      {nfts ?.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
 
       <Title
         heading="Browse by category"
